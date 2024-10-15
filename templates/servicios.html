@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Explora Bolivia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+{% extends 'base.html' %}
+
+{% block title %}Servicios - Explora Bolivia{% endblock %}
+
+{% block content %}
+<section class="servicios">
+    <h2>Nuestros Servicios Turísticos</h2>
+    <p>Explora nuestros servicios de turismo y descubre Bolivia con experiencias únicas y precios accesibles.</p>
+
+    <!-- Paquete Unificado -->
+    <div class="paquete-unico">
+        
+        <!-- Paquete Salar de Uyuni -->
+        <div class="servicio">
+            <img src="{{ url_for('static', filename='imagenes/salar1.jpeg') }}" alt="Paquete Salar de Uyuni">
+            <h3>Paquete Salar de Uyuni</h3>
+            <p>Precio: $150 / Por Persona</p>
+            <ul class="table-list">
+                <li><i class="icofont icofont-ui-check"></i>Tour guiado por el salar</li>
+                <li><i class="icofont icofont-ui-check"></i>Visita a la Isla Incahuasi</li>
+                <li class="cross"><i class="icofont icofont-ui-close"></i>Alojamiento de lujo</li>
+                <li class="cross"><i class="icofont icofont-ui-close"></i>Transporte aéreo</li>
+                <li class="cross"><i class="icofont icofont-ui-close"></i>Comidas gourmet</li>
+            </ul>
+            <a href="#" class="button">Reserva Ahora</a>
+        </div>
+        
+        <!-- Paquete Cristo de la Concordia -->
+        <div class="servicio">
+            <img src="{{ url_for('static', filename='imagenes/cristo2.jpg') }}" alt="Paquete Cristo de la Concordia">
+            <h3>Paquete Cristo de la Concordia</h3>
+            <p>Precio: $50 / Por Persona</p>
+            <ul class="table-list">
+                <li><i class="icofont icofont-ui-check"></i>Visita guiada al Cristo</li>
+                <li><i class="icofont icofont-ui-check"></i>Subida en teleférico</li>
+                <li><i class="icofont icofont-ui-check"></i>Vista panorámica de la ciudad</li>
+                <li><i class="icofont icofont-ui-check"></i>Guía especializado</li>
+                <li class="cross"><i class="icofont icofont-ui-close"></i>Transporte desde otras ciudades</li>
+            </ul>
+            <a href="#" class="button">Reserva Ahora</a>
+        </div>
+        
+        <!-- Paquete Tiwanaku -->
+        <div class="servicio">
+            <img src="{{ url_for('static', filename='imagenes/tiwanacu.png') }}" alt="Paquete Tiwanaku">
+            <h3>Paquete Tiwanaku</h3>
+            <p>Precio: $100 / Por Persona</p>
+            <ul class="table-list">
+                <li><i class="icofont icofont-ui-check"></i>Tour arqueológico</li>
+                <li><i class="icofont icofont-ui-check"></i>Visita al Templo de Kalasasaya</li>
+                <li><i class="icofont icofont-ui-check"></i>Guía especializado en historia</li>
+                <li><i class="icofont icofont-ui-check"></i>Transporte terrestre</li>
+                <li><i class="icofont icofont-ui-check"></i>Entrada a los museos</li>
+            </ul>
+            <a href="#" class="button">Reserva Ahora</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+</body>
+</html>

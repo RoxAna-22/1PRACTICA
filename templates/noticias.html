@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    {% extends 'base.html' %}
+
+    {% block title %}Noticias - Explora Bolivia{% endblock %}
+
+    {% block content %}
+    <section class="noticias">
+        <h2>Últimas Noticias</h2>
+        <article class="noticia">
+            <h3>Nuevo tour a la Isla del Sol</h3>
+            <img src="{{ url_for('static', filename='imagenes/tiwanacu.png') }}" alt="Isla del Sol">
+            <p>¡Estamos emocionados de anunciar nuestro nuevo tour a la Isla del Sol! Descubre la historia y belleza de
+                este lugar mágico.</p>
+        </article>
+        <article class="noticia">
+            <h3>Promociones de temporada</h3>
+            <img src="{{ url_for('static', filename='imagenes/teleferico.png') }}" alt="Promociones">
+            <p>No te pierdas nuestras promociones especiales para la temporada de verano. Consulta nuestras redes
+                sociales para más información.</p>
+        </article>
+        <!-- Añadir más noticias según sea necesario -->
+    </section>
+    {% endblock %}
+
+
+</body>
+
+</html>

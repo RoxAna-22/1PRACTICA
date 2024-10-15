@@ -1,0 +1,61 @@
+<!-- inicio.html -->
+{% extends 'base.html' %}
+
+{% block title %}Inicio - Explora Bolivia{% endblock %}
+
+{% block content %}
+<section class="inicio">
+    <div class="slider">
+        <!-- Imágenes del slider con texto superpuesto -->
+        <div class="slide">
+            <img src="{{ url_for('static', filename='imagenes/salar1.jpeg') }}" alt="Imagen 1">
+            <div class="texto">
+                <h2>Bienvenidos a Explora Bolivia</h2>
+                <p>Descubre la belleza natural y cultural de Bolivia a través de nuestros servicios de turismo.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{{ url_for('static', filename='imagenes/titicaca.jpg') }}" alt="Imagen 2">
+            <div class="texto">
+                <h2>Explora Nuestros Servicios</h2>
+                <p>Te ofrecemos experiencias inolvidables en los lugares más hermosos de Bolivia.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{{ url_for('static', filename='imagenes/teleferico1.jpg') }}" alt="Imagen 3">
+            <div class="texto">
+                <h2>Aventuras Únicas</h2>
+                <p>Únete a nuestras excursiones y descubre lo mejor de nuestra cultura y naturaleza.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Testimonios y llamada a la acción -->
+    <div class="testimonios">
+        <h3>Testimonios de nuestros clientes</h3>
+        <blockquote>
+            <p>"Una experiencia inolvidable. Todo estuvo perfectamente organizado."</p>
+            <footer>- Juan Pérez</footer>
+        </blockquote>
+        <blockquote>
+            <p>"Los guías son muy conocedores y amables. ¡Lo recomiendo!"</p>
+            <footer>- María López</footer>
+        </blockquote>
+    </div>
+
+    <div class="ventajas">
+        <h3>Ventajas de elegirnos</h3>
+        <ul>
+            <li>Personal altamente capacitado.</li>
+            <li>Experiencias únicas y personalizadas.</li>
+            <li>Compromiso con el turismo sostenible.</li>
+        </ul>
+    </div>
+
+    <div class="cta">
+        <h3>¡Contáctanos hoy!</h3>
+        <br>
+        <a href="{{ url_for('contacto') }}" class="button-primary">Solicitar información</a>
+    </div>
+</section>
+{% endblock %}

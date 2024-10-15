@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+
+{% block title %}¿Quiénes somos? - Explora Bolivia{% endblock %}
+
+{% block content %}
+<section class="quienes-somos">
+    <h2>¿Quiénes somos?</h2>
+    <p>Fundada en 2020, Explora Bolivia nace con el propósito de ofrecer un turismo responsable y sostenible. Nos apasiona compartir la riqueza cultural y natural de nuestro país.</p>
+    
+    <h3>Misión</h3>
+    <p>Brindar experiencias inolvidables que promuevan el respeto por el medio ambiente y la cultura local.</p>
+    
+    <h3>Visión</h3>
+    <p>Ser la agencia de turismo líder en Bolivia, reconocida por su compromiso con el turismo sostenible.</p>
+
+    <h3>Nuestro equipo</h3>
+    <div class="equipo">
+        <div class="miembro">
+            <img src="{{ url_for('static', filename='imagenes/author1.jpg') }}" alt="Miembro del equipo">
+            <h4>Pedro Gómez</h4>
+            <p>Guía turístico con 10 años de experiencia.</p>
+        </div>
+        <div class="miembro">
+            <img src="{{ url_for('static', filename='imagenes/author2.jpg') }}" alt="Miembro del equipo">
+            <h4>Laura Ruiz</h4>
+            <p>Especialista en ecoturismo y sostenibilidad.</p>
+        </div>
+        <!-- Añadir más miembros según sea necesario -->
+    </div>
+</section>
+{% endblock %}
+
+
+</body>
+</html>
